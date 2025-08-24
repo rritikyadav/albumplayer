@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./svgs/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="actualbody">
+      <div class="side1" style="transition:all 0.5s ease-in-out;">
+        <div class="logosection">
+          <div class="close"><img src="./svgs/close.svg" alt=""></div>
+          <div class="home">
+        <img src="./svgs/home.svg" alt="" />
+         <h4>Home</h4></span>
+          </div>
+        </div>
+        <!-- librarysection -->
+        <div class="library">
+            <div class="liblogo">
+              <img src="svgs/library.svg" alt="" />
+              <h4>Your Favorite Artists</h4>
+            </div>
+            <div class="playlist">
+              <div class="artist">
+                <img src="./images/karanaujla.jpg" alt="">
+                <h4>Karan Aujla</h4>
+              </div>
+              <div class="artist">
+                <img src="./images/sidhumoosewala.jpg" alt="">
+                <h4>Sidhu Moosewala</h4>
+              </div>
+              <div class="artist">
+                <img src="./images/seedhemaut.jpg" alt="">
+                <h4>Seedhe Maut</h4>
+              </div>
+              <div class="artist">
+                <img src="./images/krsna.jpg" alt="">
+                <h4>Krsna</h4>
+              </div>
+              <div class="artist">
+                <img src="./images/raftaar.jpg" alt="">
+                <h4>Raftaar</h4>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- side2 -->
+      <div class="side2">
+        <div class="side2section">
+          <div class="nav">
+            <div class="sidebar"><img src="./svgs/playlist.svg" alt=""></div>
+            <div class="logo"><img src="./svgs/logo.svg" alt="" /></div>
+          </div>
+        <div class="albumcards">
+          
+        </div>
+         </div>
+        <!-- seekbar start -->
+         <div class="seekbar">
+          <input type="range" name="seekbar" min="0" max="500" value="0" step="1">
+          </div>
+
+          <!-- playbar -->
+
+          <div class="playbar">
+            <div class="runsongtime">00:00</div>
+            <div class="duration">00:00</div>
+            <div class="songname">
+              <img src="./svgs/music.png" alt="">
+              <p>youngest in charge - sidhu Moosewala</p>
+            </div>
+
+              <div class="playpause">
+                <img id="previous" src="./svgs/previous.svg" alt="">
+                <img id="play" src="./svgs/play.svg" alt="">
+                <img id="next" src="./svgs/next.svg" alt="">
+              </div>
+              <div class="volume">
+                <img src="./svgs/volume.svg" alt="">
+                <input type="range" name="volume" min="0" max="100">
+              </div>
+              <div class="upnexticon">
+                <img src="./svgs/upnext.png" alt="">
+              </div>
+          </div>
+         </div>
+      </div>
+      <div class="upnext">
+        <img class="closeupnext" src="./svgs/close.svg" alt="">
+        <img src="./svgs/cardplay.svg" alt="" class="playalbum">
+        <div class="albumname">
+          <h3 style="position:absolute;top:45%;left:17%;word-spacing: 0.1rem;">Choose One Album To Play</h3>
+        </div>
+        <div class="nextsongs"></div>
+      </div>
+    <script src="./script.js"></script>
+    <script src="./songlogic.js"></script>
+  </body>
+</html>
